@@ -1,0 +1,40 @@
+__include__: [
+  './dfine_hgnetv2_s_coco.yml',
+  '../base/deim.yml'
+]
+
+output_dir: ./outputs/deim_hgnetv2_s_coco_baseline
+
+find_unused_parameters: false
+
+optimizer:
+  type: AdamW
+  params:
+    -
+      params: '^(?=.*backbone)(?!.*bn).*$'
+      lr: 0.0002
+    -
+      params: '^(?=.*(?:norm|bn)).*$'
+      weight_decay: 0.
+
+  lr: 0.0004
+  betas: [0.9, 0.999]
+  weight_decay: 0.0001
+
+epoches: 132
+flat_epoch: 64
+no_aug_epoch: 12
+
+train_dataloader:
+  dataset:
+    transforms:
+      policy:
+        epoch: [4, 64, 120]
+
+  collate_fn:
+    mixup_epochs: [4, 64]
+    stop_epoch: 120
+
+DFINETransformer:
+  # Original DEIM-style query selection. No GT-cost guidance is used.
+  query_select_method: default

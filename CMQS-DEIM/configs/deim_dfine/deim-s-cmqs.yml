@@ -1,0 +1,59 @@
+__include__: [
+  './dfine_hgnetv2_s_coco.yml',
+  '../base/deim.yml'
+]
+
+output_dir: ./outputs/deim_hgnetv2_s_coco_cmqs_a7_stop10
+
+find_unused_parameters: true
+
+optimizer:
+  type: AdamW
+  params:
+    -
+      params: '^(?=.*backbone)(?!.*bn).*$'
+      lr: 0.0002
+    -
+      params: '^(?=.*(?:norm|bn)).*$'     # except bias
+      weight_decay: 0.
+
+  lr: 0.0004
+  betas: [0.9, 0.999]
+  weight_decay: 0.0001
+
+# Keep the original DEIM-S training schedule for fair comparison.
+epoches: 132 # 120 + 4n
+
+## DEIM-S LR-Scheduler
+flat_epoch: 64
+no_aug_epoch: 12
+
+## DEIM-S DataAug
+train_dataloader:
+  dataset:
+    transforms:
+      policy:
+        epoch: [4, 64, 120]
+
+  collate_fn:
+    mixup_epochs: [4, 64]
+    stop_epoch: 120
+
+DFINETransformer:
+  # CMQS: Curriculum Matching-Aware Query Selection
+  query_select_method: cost_aware
+  query_select_alpha: 1.0
+  query_select_beta: 0.2
+  query_select_gamma: 0.2
+  query_select_use_gt: true
+  query_select_gt_stop_epoch: 10
+
+  # Reuse the same matching-cost setting as the DEIM-L CMQS configuration.
+  query_select_cost_mode: sum
+  query_select_stage_boundary_epoch: 15
+  query_select_cls_warm: 2.0
+  query_select_bbox_warm: 5.0
+  query_select_giou_warm: 2.0
+  query_select_cls_late: 2.0
+  query_select_bbox_late: 5.0
+  query_select_giou_late: 2.0
