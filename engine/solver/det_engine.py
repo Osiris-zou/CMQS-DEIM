@@ -1,3 +1,7 @@
+# Modified by the CMQS-DEIM authors, 2026.
+# Changes include explicit propagation of the current training epoch
+# through both AMP and non-AMP training paths.
+# SPDX-License-Identifier: Apache-2.0
 """
 DEIM: DETR with Improved Matching for Fast Convergence
 Copyright (c) 2024 The DEIM Authors. All Rights Reserved.
