@@ -22,9 +22,9 @@ CMQS improves the locally re-implemented DEIM baseline at both evaluated model s
 | Model | Epochs | AP | AP50 | AP75 | APs | APm | APl | ΔAP | Config | Checkpoint | Training logs |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---|
 | DEIM-S baseline | 132 | 49.11 | 66.1 | 53.2 | 30.0 | 52.4 | 66.0 | – | [config](configs/deim_dfine/deim-s-baseline.yml) | upstream/local baseline | – |
-| **DEIM-S + CMQS** | 132 | **49.27** | **66.3** | **53.3** | **30.6** | **52.6** | 66.0 | **+0.16** | [config](configs/deim_dfine/deim-s-cmqs.yml) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_s_best.pth) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_s_logs.zip) |
+| **DEIM-S + CMQS** | 132 | **49.27** | **66.3** | **53.3** | **30.6** | **52.6** | 66.0 | **+0.16** | [config](configs/deim_dfine/deim-s-cmqs.yml) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_s_best.pth) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_s_logs.txt) |
 | DEIM-L baseline | 58 | 54.37 | 72.2 | 59.0 | 37.9 | 59.1 | 71.6 | – | [config](configs/deim_dfine/deim-l-baseline.yml) | upstream/local baseline | – |
-| **DEIM-L + CMQS** | 58 | **54.58** | **72.3** | **59.2** | **38.4** | 58.9 | 71.3 | **+0.21** | [config](configs/deim_dfine/deim-l-cmqs.yml) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_l_best.pth) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_l_logs.zip) |
+| **DEIM-L + CMQS** | 58 | **54.58** | **72.3** | **59.2** | **38.4** | 58.9 | 71.3 | **+0.21** | [config](configs/deim_dfine/deim-l-cmqs.yml) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_l_best.pth) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_l_logs.txt) |
 
 The corresponding machine-readable values are stored in [results/table1_accuracy.csv](results/table1_accuracy.csv) and [results/table2_recall.csv](results/table2_recall.csv). The released checkpoints correspond to the best-recorded validation AP under the same selection rule used in the manuscript.
 
@@ -33,8 +33,8 @@ The corresponding machine-readable values are stored in [results/table1_accuracy
 After downloading the four assets, place them in one directory and compare their checksums with the release page or generated `SHA256SUMS.txt`:
 
 ```bash
-sha256sum cmqs_deim_s_best.pth cmqs_deim_s_logs.zip \
-          cmqs_deim_l_best.pth cmqs_deim_l_logs.zip
+sha256sum cmqs_deim_s_best.pth cmqs_deim_s_logs.txt \
+          cmqs_deim_l_best.pth cmqs_deim_l_logs.txt
 ```
 
 See [docs/model_zoo.md](docs/model_zoo.md) and [release_assets/README.md](release_assets/README.md) for the release procedure and provenance fields that should accompany each file.
