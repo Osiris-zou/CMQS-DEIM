@@ -6,15 +6,15 @@ This repository provides the source code, experimental configurations, model wei
 
 **Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection**
 
-**Authors:** Zhipeng Zou, Guowei Zhang, Yong Han, and Zhida Ke  
+**Authors:** Zhipeng Zou, Guowei Zhang, Yong Han, and Zhida Ke
 **Submitted to:** *The Visual Computer*
 
-> GitHub repository: https://github.com/Osiris-zou/CMQS-DEIM  
-> Release version corresponding to the revised manuscript: `v1.0.0`  
-> Software release DOI (v1.0.0): 10.5281/zenodo.20815315
-> DOI for all versions: 10.5281/zenodo.20815314
-
-> **Release assets.** The GitHub `v1.0.0` release provides the DEIM-S and DEIM-L CMQS checkpoints and their corresponding verified training logs. The filenames, provenance requirements, and checksum procedure are documented in [release_assets/README.md](release_assets/README.md).
+> **GitHub repository:** CMQS-DEIM
+> **Archived release corresponding to the revised manuscript:** `v1.0.0`
+> **Software release DOI (v1.0.0):** `10.5281/zenodo.20815315`
+> **DOI for all versions:** `10.5281/zenodo.20815314`
+>
+> **Release assets.** The GitHub `v1.0.0` release provides the DEIM-S and DEIM-L CMQS checkpoints and their corresponding verified training logs. The released model weights, logs, configurations, and reported experimental results remain unchanged. Subsequent commits on the `main` branch contain documentation, licensing, and attribution clarifications.
 
 ![CMQS framework](assets/figures/figure2_cmqs_framework.png)
 
@@ -86,7 +86,9 @@ release_assets/         Exact GitHub Release filenames and checksum template
 
 ## Environment
 
-The exact historical package freeze used for the reported runs was not preserved. The included environment.yml and requirements.txt therefore describe a reference software stack. This limitation and the recommended procedure for recording future environments are documented in docs/environment.md.
+The exact historical package freeze used for the reported experiments was not preserved. The included `environment.yml` and `requirements.txt` therefore describe a compatible reference software stack rather than an exact frozen environment.
+
+For future reruns, `scripts/export_environment.sh` can be used to record a complete Conda environment, Python package freeze, and system information. See [docs/environment.md](docs/environment.md) for details.
 
 ## Quick start
 
