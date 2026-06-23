@@ -1,0 +1,6 @@
+CMQS-DEIM reproducibility package
+
+Authors: Zhipeng Zou, Guowei Zhang, Yong Han, and Zhida Ke.
+Associated manuscript: “Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection”, submitted to The Visual Computer.
+
+This package contains modifications and analysis utilities for Curriculum Matching-Aware Query Selection (CMQS) built on upstream DEIM. Derived files retain original headers and remain subject to upstream terms. COCO data and upstream pretrained checkpoints are not redistributed.

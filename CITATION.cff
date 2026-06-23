@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, released checkpoints, experimental protocol, or metadata, cite the software release and the associated manuscript."
+title: "CMQS-DEIM: Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection"
+type: software
+authors:
+  - family-names: "Zou"
+    given-names: "Zhipeng"
+  - family-names: "Zhang"
+    given-names: "Guowei"
+  - family-names: "Han"
+    given-names: "Yong"
+  - family-names: "Ke"
+    given-names: "Zhida"
+version: "1.0.0"
+repository-code: "https://github.com/Osiris-zou/CMQS-DEIM"
+url: "https://github.com/Osiris-zou/CMQS-DEIM"
+keywords:
+  - object detection
+  - DETR
+  - DEIM
+  - query selection
+  - Hungarian matching
+  - curriculum learning
+  - COCO
+  - reproducibility
+abstract: "Source code, configurations, released checkpoints, logs, and reproducibility utilities for Curriculum Matching-Aware Query Selection implemented on DEIM."

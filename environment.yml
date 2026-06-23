@@ -1,0 +1,25 @@
+name: cmqs-deim
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - pytorch-cuda=12.1
+  - numpy
+  - scipy
+  - pillow
+  - pyyaml
+  - matplotlib
+  - pandas
+  - tqdm
+  - pip
+  - pip:
+      - opencv-python
+      - pycocotools
+      - fvcore
+      - thop
+      - tensorboard
