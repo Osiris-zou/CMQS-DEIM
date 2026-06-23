@@ -1,5 +1,5 @@
 # Replace these placeholders with sha256sum output generated from the final release assets.
 SHA256_PLACEHOLDER  cmqs_deim_s_best.pth
-SHA256_PLACEHOLDER  cmqs_deim_s_logs.zip
+SHA256_PLACEHOLDER  cmqs_deim_s_logs.txt
 SHA256_PLACEHOLDER  cmqs_deim_l_best.pth
-SHA256_PLACEHOLDER  cmqs_deim_l_logs.zip
+SHA256_PLACEHOLDER  cmqs_deim_l_logs.txt
