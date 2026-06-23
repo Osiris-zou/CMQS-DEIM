@@ -257,9 +257,15 @@ Associated manuscript:
 
 The software release has been archived on Zenodo. The manuscript citation will be updated with the final article DOI and bibliographic details if the article is published. Please also cite the upstream DEIM work.
 
-## License and third-party notice
+## License
 
-Files derived from DEIM retain their original copyright headers and remain subject to the upstream DEIM terms. See [NOTICE](NOTICE), [LICENSE.md](LICENSE.md), and [docs/upstream_version.md](docs/upstream_version.md). No license for COCO, pretrained checkpoints, or other third-party assets is granted by this repository.
+CMQS-DEIM is distributed under the Apache License, Version 2.0.
+
+This repository contains files derived from and modified from the upstream DEIM project, which is also distributed under the Apache License, Version 2.0. Applicable upstream copyright, license, and attribution notices have been retained, and modified upstream files include notices describing the CMQS-DEIM changes.
+
+See [LICENSE](LICENSE) for the complete license text, [NOTICE](NOTICE) for attribution and modification information, and [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for information about third-party software, datasets, pretrained checkpoints, and dependencies.
+
+The repository license does not grant rights to the COCO dataset, third-party pretrained checkpoints, trademarks, or other external assets. Those materials remain subject to their respective licenses and terms.
 
 ## Upstream DEIM
 
