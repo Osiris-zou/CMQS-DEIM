@@ -12,9 +12,9 @@ This repository provides the source code, experimental configurations, model wei
 > GitHub repository: https://github.com/Osiris-zou/CMQS-DEIM  
 > Release version corresponding to the revised manuscript: `v1.0.0`  
 > Software release DOI (v1.0.0): 10.5281/zenodo.20815315
-DOI for all versions: 10.5281/zenodo.20815314
+> DOI for all versions: 10.5281/zenodo.20815314
 
-> **Release-asset note.** The model and log links below are preconfigured for the `v1.0.0` GitHub Release. They become active after the four files listed in [release_assets/README.md](release_assets/README.md) are uploaded with the exact filenames shown there.
+> **Release-asset note.** The model and log links below are preconfigured for the `v1.0.0` GitHub Release. > **Release assets.** The GitHub `v1.0.0` release provides the DEIM-S and DEIM-L CMQS checkpoints and their corresponding verified training logs. The filenames, provenance requirements, and checksum procedure are documented in [release_assets/README.md](release_assets/README.md).
 
 ![CMQS framework](assets/figures/figure2_cmqs_framework.png)
 
