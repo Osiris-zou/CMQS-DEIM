@@ -14,7 +14,7 @@
 - [ ] Create tag `v1.0.0` and a GitHub Release.
 - [ ] Upload the four exact assets listed in `release_assets/README.md`.
 - [ ] Confirm the README checkpoint and log links work.
-- [ ] Archive the final release on Zenodo.
-- [ ] Replace every `ZENODO_DOI_TO_BE_ADDED` placeholder.
+- [x] Archive the final release on Zenodo.
+- [x] Replace every `ZENODO_DOI_TO_BE_ADDED` placeholder.
 - [ ] Review upstream licensing before selecting a license for newly written files.
 - [ ] Update citation metadata after article publication.
