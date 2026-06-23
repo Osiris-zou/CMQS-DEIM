@@ -10,11 +10,12 @@ The CMQS-DEIM authors introduced modifications and additions including:
 
 * curriculum epoch propagation from the training engine to the detector decoder;
 * curriculum matching-aware query scoring and top-K query selection;
-* DEIM-S and DEIM-L CMQS configurations;
+* per-image score normalization and GT-cost scheduling;
+* DEIM-S and DEIM-L CMQS experiment configurations;
 * component ablation and hyperparameter configurations;
 * computational profiling utilities;
 * scale-wise query analysis and qualitative visualization tools;
-* reproducibility documentation, result tables, and release scripts.
+* reproducibility documentation, result tables, model checkpoints, and training logs.
 
 The associated manuscript is:
 
