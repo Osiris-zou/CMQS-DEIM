@@ -12,8 +12,10 @@ authors:
   - family-names: "Ke"
     given-names: "Zhida"
 version: "1.0.0"
+doi: "10.5281/zenodo.20815315" 
+date-released: "2026-06-23"
 repository-code: "https://github.com/Osiris-zou/CMQS-DEIM"
-url: "https://github.com/Osiris-zou/CMQS-DEIM"
+url: "https://doi.org/10.5281/zenodo.20815315"
 keywords:
   - object detection
   - DETR
