@@ -1,0 +1,3 @@
+method,small_gt_coverage,medium_gt_coverage,large_gt_coverage,small_query_ratio,medium_query_ratio,large_query_ratio,small_mean_rank,small_mean_min_cost
+DEIM-L baseline,49.77,80.72,98.48,1.36,6.91,51.33,136.93,1.6034
+Ours,49.3,80.1,98.43,1.38,7.03,48.83,138.21,1.5874

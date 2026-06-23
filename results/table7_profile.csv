@@ -1,0 +1,6 @@
+model_stage,gt_cost_branch,params_M,GFLOPs,latency_ms_img,FPS,train_s_iter,peak_mem_GB,matching_cost_ms,norm_ranking_ms
+"DEIM-L baseline, inference",-,30.77,91.14,9.001,111.1,,4.493,0.0,1.147
+"Ours, inference",off,30.77,93.29,9.018,110.88,,4.49,0.0,2.047
+"DEIM-L baseline, training",-,30.77,91.14,,,0.5286,9.559,0.0,0.206
+"Ours, early training",on,30.77,93.29,,,0.5474,9.563,10.999,0.554
+"Ours, post-exit training",off,30.77,93.29,,,0.5533,9.573,0.0,0.454
