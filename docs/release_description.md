@@ -33,4 +33,4 @@ bash scripts/prepare_release_assets.sh \
 
 ## Citation
 
-The associated manuscript is under review. The software DOI will be added after Zenodo archives this release.
+The associated manuscript is under review. This v1.0.0 software release is archived on Zenodo under DOI 10.5281/zenodo.20815315.
