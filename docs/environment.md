@@ -4,12 +4,6 @@ The exact historical package freeze used for the reported experiments was not pr
 
 For future reruns and software releases, the complete environment should be exported from the training machine and reviewed to remove private paths or credentials before publication.
 
-Before creating an archival GitHub/Zenodo release, export the actual environment used for the reported runs:
-
-```bash
-bash scripts/export_environment.sh
-```
-
 This creates:
 
 - `environment/conda-environment-full.yml` when Conda is available;
