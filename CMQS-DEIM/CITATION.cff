@@ -1,9 +1,0 @@
-cff-version: 1.2.0
-title: Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection
-message: If you use this repository, please cite the associated paper and the original DEIM paper.
-authors:
-  - family-names: Zou
-    given-names: Osiris
-version: 0.1.0
-repository-code: https://github.com/Osiris-zou/CMQS-DEIM_main
-license: OTHER

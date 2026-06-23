@@ -1,6 +1,0 @@
-This repository contains the CMQS modifications for DEIM-style object detection.
-
-The implementation is built on top of the original DEIM project:
-DEIM: DETR with Improved Matching for Fast Convergence.
-Please follow the license terms of the upstream DEIM repository for files derived from DEIM.
-Newly added CMQS-specific scripts and documentation are provided for research reproducibility.
