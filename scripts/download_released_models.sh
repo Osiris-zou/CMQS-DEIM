@@ -16,7 +16,7 @@ fetch() {
 
 fetch "$BASE/cmqs_deim_s_best.pth" "$OUT/cmqs_deim_s_best.pth"
 fetch "$BASE/cmqs_deim_l_best.pth" "$OUT/cmqs_deim_l_best.pth"
-fetch "$BASE/cmqs_deim_s_logs.zip" "$LOG_OUT/cmqs_deim_s_logs.zip"
-fetch "$BASE/cmqs_deim_l_logs.zip" "$LOG_OUT/cmqs_deim_l_logs.zip"
+fetch "$BASE/cmqs_deim_s_logs.txt" "$LOG_OUT/cmqs_deim_s_logs.txt"
+fetch "$BASE/cmqs_deim_l_logs.txt" "$LOG_OUT/cmqs_deim_l_logs.txt"
 
 echo "Downloaded released CMQS assets."
