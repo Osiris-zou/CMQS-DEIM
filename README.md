@@ -14,7 +14,7 @@ This repository provides the source code, experimental configurations, model wei
 > Software release DOI (v1.0.0): 10.5281/zenodo.20815315
 > DOI for all versions: 10.5281/zenodo.20815314
 
-> **Release-asset note.** The model and log links below are preconfigured for the `v1.0.0` GitHub Release. > **Release assets.** The GitHub `v1.0.0` release provides the DEIM-S and DEIM-L CMQS checkpoints and their corresponding verified training logs. The filenames, provenance requirements, and checksum procedure are documented in [release_assets/README.md](release_assets/README.md).
+> **Release assets.** The GitHub `v1.0.0` release provides the DEIM-S and DEIM-L CMQS checkpoints and their corresponding verified training logs. The filenames, provenance requirements, and checksum procedure are documented in [release_assets/README.md](release_assets/README.md).
 
 ![CMQS framework](assets/figures/figure2_cmqs_framework.png)
 
@@ -30,17 +30,6 @@ CMQS improves the locally re-implemented DEIM baseline at both evaluated model s
 | **DEIM-L + CMQS** | 58 | **54.58** | **72.3** | **59.2** | **38.4** | 58.9 | 71.3 | **+0.21** | [config](configs/deim_dfine/deim-l-cmqs.yml) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_l_best.pth) | [download](https://github.com/Osiris-zou/CMQS-DEIM/releases/download/v1.0.0/cmqs_deim_l_logs.txt) |
 
 The corresponding machine-readable values are stored in [results/table1_accuracy.csv](results/table1_accuracy.csv) and [results/table2_recall.csv](results/table2_recall.csv). The released checkpoints correspond to the best-recorded validation AP under the same selection rule used in the manuscript.
-
-### Verify downloaded release assets
-
-After downloading the four assets, place them in one directory and compare their checksums with the release page or generated `SHA256SUMS.txt`:
-
-```bash
-sha256sum cmqs_deim_s_best.pth cmqs_deim_s_logs.txt \
-          cmqs_deim_l_best.pth cmqs_deim_l_logs.txt
-```
-
-See [docs/model_zoo.md](docs/model_zoo.md) and [release_assets/README.md](release_assets/README.md) for the release procedure and provenance fields that should accompany each file.
 
 ## Method summary
 
@@ -97,7 +86,7 @@ release_assets/         Exact GitHub Release filenames and checksum template
 
 ## Environment
 
-The included environment files describe a reference stack. Because the supplied source archive did not contain a verified historical package freeze, use `scripts/export_environment.sh` on the machine used for the reported experiments before creating the archival release. See [docs/environment.md](docs/environment.md).
+The exact historical package freeze used for the reported runs was not preserved. The included environment.yml and requirements.txt therefore describe a reference software stack. This limitation and the recommended procedure for recording future environments are documented in docs/environment.md.
 
 ## Quick start
 
@@ -153,7 +142,7 @@ Each training script writes terminal output to a unique `console.log` through `t
 
 ### 4. Download and evaluate the released CMQS checkpoints
 
-After the `v1.0.0` release assets are uploaded:
+Download the released CMQS checkpoints and training logs:
 
 ```bash
 bash scripts/download_released_models.sh
