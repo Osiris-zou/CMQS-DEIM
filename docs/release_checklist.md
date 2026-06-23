@@ -8,7 +8,7 @@
 - [ ] Confirm `query_select_cost_mode: sum` in main experiments.
 - [ ] Re-evaluate `cmqs_deim_s_best.pth` and confirm 49.27 AP.
 - [ ] Re-evaluate `cmqs_deim_l_best.pth` and confirm 54.58 AP.
-- [ ] Run `scripts/prepare_release_assets.sh` and inspect both log archives.
+- [ ] Run scripts/prepare_release_assets.sh and inspect both text log files.
 - [ ] Publish the generated SHA-256 checksums in the GitHub Release description.
 - [ ] Remove local paths, credentials, `.idea`, `.git` internals and unverified files.
 - [ ] Create tag `v1.0.0` and a GitHub Release.
