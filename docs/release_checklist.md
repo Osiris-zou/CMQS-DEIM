@@ -27,5 +27,4 @@
 * [ ] Confirm that both TXT logs contain no private paths, credentials or unrelated information.
 * [ ] Record an exact software-environment freeze for a future rerun when the training environment is available.
 * [ ] Optionally publish SHA-256 checksums for all Release assets.
-* [ ] Create a synchronized follow-up GitHub/Zenodo release after the final repository cleanup.
 * [ ] Update the manuscript citation metadata after article publication.
