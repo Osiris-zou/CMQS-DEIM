@@ -2,35 +2,32 @@
 
 ## Automated checks completed
 
-- Python syntax compilation passed for the three runtime files and all tools.
-- All main and ablation YAML files parsed successfully.
-- `CITATION.cff` parsed successfully as YAML.
-- Unit tests confirmed epoch propagation from `det_engine.py` to `deim.py` and the decoder.
-- Unit tests confirmed DEIM-L uses `T_exit = 10`, DEIM-S uses `T_exit = 24`, and both main configurations use `query_select_cost_mode: sum`.
-- `scripts/preflight_check.sh` passed.
-- All shell scripts passed `bash -n` syntax checks.
-- `scripts/prepare_release_assets.sh` was tested with dummy checkpoints and log directories; both log archives passed ZIP integrity checks and checksums were generated.
-- Relative Markdown links resolve inside the repository.
-- No container-local paths or provisional single-author citation strings remain.
-- The repository manifest has been regenerated.
+* Python syntax compilation passed for the three modified runtime files and the repository tools.
+* Main and ablation YAML configurations parsed successfully.
+* `CITATION.cff` parsed successfully as YAML.
+* Unit tests confirmed explicit epoch propagation from `det_engine.py` to `deim.py` and then to the decoder.
+* Configuration checks confirmed that DEIM-S uses `T_exit = 24`, DEIM-L uses `T_exit = 10`, and both main configurations use `query_select_cost_mode: sum`.
+* `scripts/preflight_check.sh` passed during repository construction.
+* Shell scripts passed syntax checks.
+* Relative Markdown links were checked within the repository.
 
-## Main result metadata included
+## Public release status
 
-- DEIM-S baseline: 49.11 AP.
-- DEIM-S + CMQS: 49.27 AP, with preconfigured checkpoint and log release links.
-- DEIM-L baseline: 54.37 AP.
-- DEIM-L + CMQS: 54.58 AP, with preconfigured checkpoint and log release links.
-- Table 9 seed-level data remain available as complementary stability evidence.
+* The DEIM-S and DEIM-L CMQS configurations are publicly available.
+* The DEIM-S checkpoint and verified TXT training log corresponding to 49.27 AP are available through the GitHub Release.
+* The DEIM-L checkpoint and verified TXT training log corresponding to 54.58 AP are available through the GitHub Release.
+* Machine-readable results for Tables 1, 2 and 4–9 are included in the `results/` directory.
+* GitHub Release `v1.0.0` has been published.
+* Release `v1.0.0` has been archived on Zenodo under DOI `10.5281/zenodo.20815315`.
+* The all-versions DOI is `10.5281/zenodo.20815314`.
+* The repository is distributed under the Apache License, Version 2.0.
+* Upstream DEIM attribution and a compatibility-validated upstream commit are documented.
 
-## Manual actions still required before public release
+## Remaining manual checks
 
-1. Record the exact upstream DEIM commit or release.
-2. Run `scripts/export_environment.sh` on the actual training machine and review the output.
-3. Prepare the four real release assets with `scripts/prepare_release_assets.sh`.
-4. Re-evaluate both released checkpoints and confirm 49.27 AP and 54.58 AP.
-5. Inspect the log archives for private paths or credentials.
-6. Create GitHub tag and Release `v1.0.0`, upload the four exact assets, and publish their SHA-256 checksums.
-7. Archive the final release on Zenodo.
-8. Replace every `ZENODO_DOI_TO_BE_ADDED` placeholder.
-9. Select and document an appropriate license for newly written CMQS-only files after reviewing upstream DEIM terms.
-10. Configure the GitHub About description, website and topics using `docs/github_metadata.md`.
+* Independently re-evaluate the released DEIM-S checkpoint and confirm 49.27 AP if this has not already been completed.
+* Independently re-evaluate the released DEIM-L checkpoint and confirm 54.58 AP if this has not already been completed.
+* Confirm that the released TXT logs contain no private paths, credentials or unrelated terminal output.
+* Record a complete software-environment freeze for future reruns when access to the original or a reproduced training environment is available.
+* Optionally publish SHA-256 checksums for the four Release assets.
+* Create a synchronized follow-up release after the current `main` branch documentation and licensing updates are finalized.
