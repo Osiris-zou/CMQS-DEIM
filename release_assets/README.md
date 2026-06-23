@@ -19,9 +19,9 @@ bash scripts/prepare_release_assets.sh \
   /path/to/deim_l_best.pth /path/to/cmqs_deim_l_logs.txt
 ```
 
-The script creates `release_assets/v1.0.0/`, copies the checkpoints, copies the two checkpoints and two verified text logs, and generates `SHA256SUMS.txt`.
+The script creates release_assets/v1.0.0/, copies the two checkpoints and two verified TXT logs, and generates SHA256SUMS.txt.
 
-## Required verification before upload
+## Recommended verification for release updates
 
 1. Evaluate each checkpoint with the corresponding configuration.
 2. Confirm the exact AP values in the COCO summary.
