@@ -1,13 +1,13 @@
-# Modified by the CMQS-DEIM authors, 2026.
-# Changes include explicit propagation of the training epoch and targets
-# from the detector wrapper to the decoder.
-# SPDX-License-Identifier: Apache-2.0
 """
 Copyright (c) 2024 The DEIM Authors. All Rights Reserved.
 
 CMQS modification: propagate the current training epoch to the decoder so that
 beta(t) and T_exit follow the configured curriculum schedule.
 """
+# Modified by the CMQS-DEIM authors, 2026.
+# Changes include explicit propagation of training targets and the current
+# epoch from the detector wrapper to the decoder.
+# SPDX-License-Identifier: Apache-2.0
 
 import torch.nn as nn
 from ..core import register
