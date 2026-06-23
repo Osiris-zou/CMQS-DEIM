@@ -28,4 +28,4 @@ The script creates `release_assets/v1.0.0/`, copies the checkpoints, copies the 
 3. Inspect the text log files and check that they contain no private paths, credentials or unrelated data.
 4. Confirm that the configuration snapshot matches the released YAML.
 5. Publish the generated SHA-256 values in the GitHub Release description.
-6. After the GitHub Release is final, archive it on Zenodo and replace `ZENODO_DOI_TO_BE_ADDED` in the README and citation metadata.
+6. The GitHub v1.0.0 release is archived on Zenodo under DOI 10.5281/zenodo.20815315. The all-versions DOI is 10.5281/zenodo.20815314.
