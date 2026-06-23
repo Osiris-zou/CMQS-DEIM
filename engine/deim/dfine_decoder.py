@@ -1,7 +1,3 @@
-# Modified by the CMQS-DEIM authors, 2026.
-# Changes include curriculum matching-aware query scoring, per-image
-# normalization, GT-cost scheduling, top-K selection, and analysis export.
-# SPDX-License-Identifier: Apache-2.0
 """
 DEIM: DETR with Improved Matching for Fast Convergence
 
@@ -13,6 +9,10 @@ Copyright (c) 2024 The DEIM Authors. All Rights Reserved.
 Modified from D-FINE (https://github.com/Peterande/D-FINE/)
 Copyright (c) 2024 D-FINE Authors. All Rights Reserved.
 """
+# Modified by the CMQS-DEIM authors, 2026.
+# Changes include curriculum matching-aware query scoring, per-image
+# normalization, GT-cost scheduling, top-K selection, and query-analysis export.
+# SPDX-License-Identifier: Apache-2.0
 
 import math
 import copy
