@@ -1,3 +1,7 @@
+# Modified by the CMQS-DEIM authors, 2026.
+# Changes include explicit propagation of the training epoch and targets
+# from the detector wrapper to the decoder.
+# SPDX-License-Identifier: Apache-2.0
 """
 Copyright (c) 2024 The DEIM Authors. All Rights Reserved.
 
