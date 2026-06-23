@@ -12,6 +12,7 @@ authors:
   - family-names: "Ke"
     given-names: "Zhida"
 version: "1.0.0"
+license: Apache-2.0
 doi: "10.5281/zenodo.20815315" 
 date-released: "2026-06-23"
 repository-code: "https://github.com/Osiris-zou/CMQS-DEIM"
