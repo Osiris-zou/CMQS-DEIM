@@ -18,8 +18,8 @@ Include the generated `SHA256SUMS.txt` values in this release description after 
 
 ```bash
 bash scripts/prepare_release_assets.sh \
-  /path/to/deim_s_best.pth /path/to/deim_s_run_or_log \
-  /path/to/deim_l_best.pth /path/to/deim_l_run_or_log
+  /path/to/deim_s_best.pth /path/to/cmqs_deim_s_logs.txt \
+  /path/to/deim_l_best.pth /path/to/cmqs_deim_l_logs.txt
 ```
 
 ## Package contents
