@@ -260,3 +260,9 @@ The software release has been archived on Zenodo. The manuscript citation will b
 ## License and third-party notice
 
 Files derived from DEIM retain their original copyright headers and remain subject to the upstream DEIM terms. See [NOTICE](NOTICE), [LICENSE.md](LICENSE.md), and [docs/upstream_version.md](docs/upstream_version.md). No license for COCO, pretrained checkpoints, or other third-party assets is granted by this repository.
+
+## Upstream DEIM
+
+CMQS-DEIM is implemented as a modification and reproducibility overlay of the official DEIM project. The exact historical upstream commit used for the original experiments was not preserved. The released implementation has been checked against DEIM commit `bc11dfefc08d79756508c7f8b56c29feb909a4f0`.
+
+See [docs/upstream_version.md](docs/upstream_version.md) and [docs/changelog_from_deim.md](docs/changelog_from_deim.md) for details.
