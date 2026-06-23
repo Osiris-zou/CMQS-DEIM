@@ -1,5 +1,33 @@
 # Upstream DEIM Version
 
-The exact upstream DEIM commit used for the historical experiments was not recorded in the source archive supplied for this repository reconstruction. Before archival release, replace this note with the exact upstream repository URL and commit hash or release tag.
+CMQS-DEIM is developed as a modification and reproducibility overlay of the official DEIM project.
 
-The patch script verifies the expected upstream directory structure, but structural compatibility is not a substitute for recording the exact revision.
+## Upstream repository
+
+* Project: DEIM
+* Repository: `Intellindust-AI-Lab/DEIM`
+* Branch: `main`
+* Compatibility-validated commit: `bc11dfefc08d79756508c7f8b56c29feb909a4f0`
+* Commit date: July 21, 2025
+* Upstream license: Apache License 2.0
+
+The exact historical upstream commit used when the original experimental environment was created was not preserved. To provide a fixed and inspectable reference point, the released CMQS-DEIM implementation has been checked against the DEIM repository snapshot identified above.
+
+## Modified core files
+
+The following DEIM files were modified for CMQS-DEIM:
+
+* `engine/deim/dfine_decoder.py`
+* `engine/deim/deim.py`
+* `engine/solver/det_engine.py`
+
+The main modifications include:
+
+* explicit propagation of the current training epoch;
+* curriculum matching-aware candidate-query scoring;
+* per-image score normalization;
+* ground-truth matching-cost scheduling;
+* top-K decoder query selection;
+* optional query-analysis export.
+
+Applicable upstream copyright, license, and attribution notices are retained. Additional information is provided in `LICENSE`, `NOTICE`, `THIRD_PARTY_LICENSES.md`, and `docs/changelog_from_deim.md`.
