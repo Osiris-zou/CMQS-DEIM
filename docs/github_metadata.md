@@ -11,7 +11,7 @@ Source code, released models, logs, and reproducibility package for “Curriculu
 Use the Zenodo DOI URL after the release is archived:
 
 ```text
-https://doi.org/ZENODO_DOI_TO_BE_ADDED
+https://doi.org/10.5281/zenodo.20815314
 ```
 
 ## Topics
