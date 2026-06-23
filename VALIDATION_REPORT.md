@@ -30,4 +30,3 @@
 * Confirm that the released TXT logs contain no private paths, credentials or unrelated terminal output.
 * Record a complete software-environment freeze for future reruns when access to the original or a reproduced training environment is available.
 * Optionally publish SHA-256 checksums for the four Release assets.
-* Create a synchronized follow-up release after the current `main` branch documentation and licensing updates are finalized.
