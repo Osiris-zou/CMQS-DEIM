@@ -1,5 +1,7 @@
 # Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815314.svg)](https://doi.org/10.5281/zenodo.20815314)
+
 This repository provides the source code, experimental configurations, model weights, training logs, reproducibility protocols, analysis utilities, and result tables associated with the manuscript:
 
 **Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection**
@@ -9,7 +11,8 @@ This repository provides the source code, experimental configurations, model wei
 
 > GitHub repository: https://github.com/Osiris-zou/CMQS-DEIM  
 > Release version corresponding to the revised manuscript: `v1.0.0`  
-> Software release DOI: `ZENODO_DOI_TO_BE_ADDED`
+> Software release DOI (v1.0.0): 10.5281/zenodo.20815315
+DOI for all versions: 10.5281/zenodo.20815314
 
 > **Release-asset note.** The model and log links below are preconfigured for the `v1.0.0` GitHub Release. They become active after the four files listed in [release_assets/README.md](release_assets/README.md) are uploaded with the exact filenames shown there.
 
@@ -240,8 +243,8 @@ If you use this code, released checkpoints, experimental protocol, or metadata, 
   title   = {CMQS-DEIM: Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection},
   year    = {2026},
   version = {1.0.0},
-  doi     = {ZENODO_DOI_TO_BE_ADDED},
-  url     = {https://doi.org/ZENODO_DOI_TO_BE_ADDED},
+  doi     = {10.5281/zenodo.20815315},
+  url     = {https://doi.org/10.5281/zenodo.20815315},
   note    = {Software associated with a manuscript submitted to The Visual Computer}
 }
 ```
@@ -252,7 +255,7 @@ Associated manuscript:
 > *Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection.*  
 > Manuscript submitted to *The Visual Computer*.
 
-The citation information will be updated with the final software DOI and article bibliographic details when available. Please also cite the upstream DEIM work.
+The software release has been archived on Zenodo. The manuscript citation will be updated with the final article DOI and bibliographic details if the article is published. Please also cite the upstream DEIM work.
 
 ## License and third-party notice
 
