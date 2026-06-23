@@ -14,13 +14,7 @@ This release corresponds to the revised manuscript **“Curriculum Matching-Awar
 - `cmqs_deim_l_best.pth`
 - `cmqs_deim_l_logs.txt`
 
-Include the generated `SHA256SUMS.txt` values in this release description after preparing the assets with:
-
-```bash
-bash scripts/prepare_release_assets.sh \
-  /path/to/deim_s_best.pth /path/to/cmqs_deim_s_logs.txt \
-  /path/to/deim_l_best.pth /path/to/cmqs_deim_l_logs.txt
-```
+SHA-256 checksums may be added in a follow-up release after the final assets are independently verified.
 
 ## Package contents
 
