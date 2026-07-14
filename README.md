@@ -1,5 +1,4 @@
-# Curriculum Matching-Aware Query Selection for Efficient End-to-End Object Detection
-
+# Curriculum Matching-Aware Query Selection for Real-Time DETR-Based Object Detection
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815314.svg)](https://doi.org/10.5281/zenodo.20815314)
 
 This repository provides the source code, experimental configurations, model weights, training logs, reproducibility protocols, analysis utilities, and result tables associated with the manuscript:
