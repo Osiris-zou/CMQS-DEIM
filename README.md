@@ -15,6 +15,7 @@ This repository provides the source code, experimental configurations, model wei
 >
 > **Release assets.** The GitHub `v1.0.0` release provides the DEIM-S and DEIM-L CMQS checkpoints and their corresponding verified training logs. The released model weights, logs, configurations, and reported experimental results remain unchanged. Subsequent commits on the `main` branch contain documentation, licensing, and attribution clarifications.
 
+![CMQS framework](assets/figures/figure2.jpg)
 ![CMQS framework](assets/figures/figure2_cmqs_framework.png)
 
 ## Main results and released models
