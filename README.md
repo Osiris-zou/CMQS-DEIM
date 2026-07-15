@@ -235,8 +235,7 @@ If you use this code, released checkpoints, experimental protocol, or metadata, 
   year    = {2026},
   version = {1.0.0},
   doi     = {10.5281/zenodo.20815315},
-  url     = {https://doi.org/10.5281/zenodo.20815315},
-  note    = {Software associated with a manuscript submitted to The Visual Computer}
+  url     = {https://doi.org/10.5281/zenodo.20815315}
 }
 ```
 
